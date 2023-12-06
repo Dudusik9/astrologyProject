@@ -1,4 +1,4 @@
-package com.dud.and.kra.astrology.model;
+package com.dud.and.kra.astrology.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

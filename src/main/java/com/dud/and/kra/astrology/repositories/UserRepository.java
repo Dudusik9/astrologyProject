@@ -1,6 +1,6 @@
 package com.dud.and.kra.astrology.repositories;
 
-import com.dud.and.kra.astrology.model.User;
+import com.dud.and.kra.astrology.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

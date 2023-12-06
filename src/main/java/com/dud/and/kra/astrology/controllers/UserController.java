@@ -1,7 +1,8 @@
-package com.dud.and.kra.astrology.controller;
+package com.dud.and.kra.astrology.controllers;
 
-import com.dud.and.kra.astrology.model.User;
-import com.dud.and.kra.astrology.service.UserService;
+import com.dud.and.kra.astrology.dto.UserDTO;
+import com.dud.and.kra.astrology.models.User;
+import com.dud.and.kra.astrology.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("/{userId}")
-    public User getUserById(@PathVariable Long userId) {
+    public UserDTO getUserById(@PathVariable Long userId) {
         return userService.getUserById(userId);
     }
 }
