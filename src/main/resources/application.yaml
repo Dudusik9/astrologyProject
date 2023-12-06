@@ -1,0 +1,12 @@
+# Настройки для подключения к PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: toor
+
+  # Дополнительные настройки (необязательно)
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
